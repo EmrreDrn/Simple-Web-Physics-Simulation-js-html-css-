@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>phsicSm|By Emrre</title>
+    <style>
+        body { margin: 0; overflow: hidden; background: #1a1a1a; font-family: sans-serif; }
+        #instructions {
+            position: absolute; bottom: 20px; left: 20px; color: white;
+            background: rgba(0,0,0,0.6); padding: 15px; border-radius: 8px;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="instructions">
+        <b>control:</b><br>
+Mouse Left: Rotate | Right: Scroll | Wheel: Zoom <br>
+    
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/",
+                "cannon-es": "https://cdn.skypack.dev/cannon-es",
+                "dat.gui": "https://cdn.skypack.dev/dat.gui"
+            }
+        }
+    </script>
+    <script type="module" src="main.js"></script>
+    <div id="fps-counter" style="position: fixed; top: 10px; left: 10px; background: rgba(0,0,0,0.6); color: white; padding: 5px; font-family: monospace; z-index: 9999;"></div>
+<script type="module" src="fps.js"></script>
+</body>
+</html>
